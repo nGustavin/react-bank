@@ -1,0 +1,64 @@
+@use '../_colors';
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  >main{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+
+    >header{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      >h1{
+        font-size: 65px;
+        color: colors.$white;
+      }
+
+      >h4{
+        color: colors.$white;
+        filter: brightness(0.8);
+        margin-left: 10px;
+        font-size: 18px;
+      }
+    }
+
+    >h4{
+      color: colors.$white;
+      margin-left: 10px;
+      font-size: 18px;
+
+      >:first-child{
+        color: colors.$green;
+        text-decoration: none;
+      }
+    }
+
+
+    >form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+
+      :last-child{
+        margin-top: 30px;
+      }
+    }
+  }
+}
